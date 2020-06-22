@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editArtist"
+            android:layout_width="407dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="가수 이름"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editSong"
+            android:layout_width="414dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="노래 제목"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btnApi"
+            android:layout_width="415dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:text="GIVE ME THE LYRICS OF THE SONG" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtLyrics"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColor="#FF5722"
+                android:textSize="30sp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
